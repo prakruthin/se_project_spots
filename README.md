@@ -1,21 +1,30 @@
-# Project 3: Spots
+# Spots
 
-### Overview  
+A simple responsive image sharing website
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+### Description
+
+Spots is a minimal photo sharing website users can view and share their favorite photos. This website is designed using responsive design- optimal for desktop, tablet and mobile phone. The site offers user profile section for user introduction, a gallery for image sharing, interactive buttons for liking and adding new posts.
+
+## Tech stack
+
+- HTML
+- CSS
+- BEM methodology and file structure
+- Responsive Design through media quieries
+- Layout understanding from Figma Design
+- Repository tracking through GitHub
+- Deployment via GitHub pages
+
+## Deployment
+
+This webpage is deployed into GitHub Pages: [Deployment Link](https://prakruthin.github.io/se_project_spots/index.html)
+
+## Future scope
+
+- Add JavaScript
+- SQL connection to store likes and user information.
+
+## Screenshots and Video
+
+yet to be added

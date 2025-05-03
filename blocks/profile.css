@@ -118,7 +118,8 @@
 
   .profile__edit-btn {
     text-align: center;
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 
   .profile__add-btn {
