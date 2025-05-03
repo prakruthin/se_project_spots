@@ -1,11 +1,18 @@
 .footer {
   color: rgba(33, 33, 33, 0.7);
-  /* margin: 60px auto; */
   margin: 0;
   padding: 60px 0;
   text-align: center;
+  font-size: 16px;
+  line-height: 1;
 }
 
 .footer__content {
   margin: 0;
+}
+
+@media screen and (max-width: 627px) {
+  .footer__content {
+    padding: 60px auto;
+  }
 }
