@@ -10,9 +10,3 @@
 .footer__content {
   margin: 0;
 }
-
-@media screen and (max-width: 627px) {
-  .footer__content {
-    padding: 60px 0;
-  }
-}
