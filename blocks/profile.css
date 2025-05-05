@@ -59,6 +59,13 @@
   transition: opacity 0.5s;
 }
 
+.profile__edit-btn::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/pencil.svg);
+}
+
 .profile__edit-btn:hover {
   opacity: 1;
   cursor: pointer;
@@ -80,6 +87,16 @@
   align-self: flex-end;
   white-space: nowrap;
   transition: background-color 0.5s;
+  align-items: center;
+}
+
+.profile__add-btn::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/plus.svg);
+  background-size: contain;
+  flex-shrink: 0;
 }
 
 .profile__add-btn:hover {
