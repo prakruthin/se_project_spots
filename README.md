@@ -4,7 +4,7 @@ A simple responsive image sharing website
 
 ### Description
 
-Spots is a minimal photo sharing website users can view and share their favorite photos. This website is designed using responsive design- optimal for desktop, tablet and mobile phone. The site offers user profile section for user introduction, a gallery for image sharing, interactive buttons for liking and adding new posts.
+Spots is a minimal photo-sharing website where users can view and share their favorite photos. This website is designed using responsive design- optimal for desktop, tablet, and mobile phone. The site offers a user profile section for user introduction, a gallery for image sharing, and interactive buttons for liking and adding new posts.
 
 ## Tech stack
 
@@ -27,4 +27,4 @@ This webpage is deployed into GitHub Pages: [Deployment Link](https://prakruthin
 
 ## Screenshots and Video
 
-yet to be added
+Video Link: [Video](https://drive.google.com/file/d/1W2rfSHymiSZul-9Je0l9duxUCwLcJRsN/view?usp=drive_link)
