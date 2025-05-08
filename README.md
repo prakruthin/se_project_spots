@@ -28,3 +28,8 @@ This webpage is deployed into GitHub Pages: [Deployment Link](https://prakruthin
 ## Screenshots and Video
 
 Video Link: [Video](https://drive.google.com/file/d/1W2rfSHymiSZul-9Je0l9duxUCwLcJRsN/view?usp=drive_link)
+
+Screenshots:
+<img src="./screenshots/desktop_view.png" alt="Desktop view" />
+<img src="./screenshots/tablet_view.png" alt="Tablet view">
+<img src="./screenshots/mobile_view.png" alt="Mobile view">
