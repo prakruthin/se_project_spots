@@ -53,6 +53,7 @@ function handleAddCardSubmit(evt) {
   console.log(newPostCardImageInput.value);
   console.log(newPostCardCaptionInput.value);
   newPostModal.classList.remove("modal_is-opened");
+  newPostForm.reset();
 }
 
 newPostForm.addEventListener("submit", handleAddCardSubmit);
