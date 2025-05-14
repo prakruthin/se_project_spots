@@ -35,5 +35,5 @@ Screenshots:
 <img src="./screenshots/mobile_view.png" alt="Mobile view">
 <img src="./screenshots/edit_profile.png" alt="Edit profile">
 <img src="./screenshots/edit_profile_mobile.png" alt="Edit profile mobile">
-<img src="./screenshots/new_post.png.png" alt="New post">
+<img src="./screenshots/new_post.png" alt="New post">
 <img src="./screenshots/new_post_mobile.png" alt="New pos Mobile">
