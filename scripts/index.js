@@ -65,6 +65,9 @@ const cardTemplate = document
   .content.querySelector(".card");
 const cardsList = document.querySelector(".cards__list");
 
+// choosing modalList
+const modalList = document.querySelectorAll(".modal");
+
 function getCardElement(data) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardTitleEl = cardElement.querySelector(".card__title");
@@ -97,10 +100,14 @@ function getCardElement(data) {
 
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+
+  document.addEventListener("keydown", handleEscapeKey);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+
+  document.removeEventListener("keydown", handleEscapeKey);
 }
 
 previewModalCloseBtn.addEventListener("click", () => {
@@ -156,7 +163,28 @@ function handleAddCardSubmit(evt) {
 
 newPostForm.addEventListener("submit", handleAddCardSubmit);
 
+// Add image cards to the initial page
 initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });
+
+// Close modal by clicking anywhere outside the modal's border
+modalList.forEach((modal) => {
+  modal.addEventListener("click", (evt) => {
+    if (evt.target.classList.contains("modal")) {
+      closeModal(modal);
+    }
+  });
+});
+
+// close modal using Escape button
+const handleEscapeKey = (evt) => {
+  console.log("button pressed");
+  if (evt.key === "Escape") {
+    const openedModal = document.querySelector(".modal.modal_is-opened");
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
+};
