@@ -4,15 +4,28 @@ A simple responsive image sharing website
 
 ### Description
 
-Spots is a minimal photo-sharing website where users can view and share their favorite photos. This website is designed using responsive design- optimal for desktop, tablet, and mobile phone. The site offers a user profile section for user introduction, a gallery for image sharing, and interactive buttons for liking and adding new posts.
+Spots is a responsive image sharing web application that allows users to manage a personal profile, view scenic cards, and create new posts. The project contains modal popups, form validation, DOM manipulation, and BEM methodology.
+
+## Features
+
+- Edit Profile Modal
+- Add New Post Modal
+- Like Button Toggle
+- Delete Card Functionality
+- Image Preview Modal
+- Form Validation
+- Submit Button Disable/Enable
+- Modal Close on ESC / Overlay Click
+- Responsive Layout
 
 ## Tech stack
 
 - HTML
 - CSS
 - BEM methodology and file structure
+- JavaScript
 - Responsive Design through media quieries
-- Layout understanding from Figma Design
+- Figma Design Interpretation
 - Repository tracking through GitHub
 - Deployment via GitHub pages
 
@@ -22,7 +35,6 @@ This webpage is deployed into GitHub Pages: [Deployment Link](https://prakruthin
 
 ## Future scope
 
-- Add JavaScript
 - SQL connection to store likes and user information.
 
 ## Screenshots and Video
@@ -34,6 +46,5 @@ Screenshots:
 <img src="./screenshots/tablet_view.png" alt="Tablet view">
 <img src="./screenshots/mobile_view.png" alt="Mobile view">
 <img src="./screenshots/edit_profile.png" alt="Edit profile">
-<img src="./screenshots/edit_profile_mobile.png" alt="Edit profile mobile">
 <img src="./screenshots/new_post.png" alt="New post">
-<img src="./screenshots/new_post_mobile.png" alt="New pos Mobile">
+<img src="./screenshots/image_preview.png" alt="Image preview">
