@@ -8,22 +8,18 @@ Spots is a responsive image sharing web application that allows users to manage 
 
 ## Features
 
-- Edit Profile Modal
-- Add New Post Modal
-- Like Button Toggle
-- Delete Card Functionality
-- Image Preview Modal
-- Form Validation
-- Submit Button Disable/Enable
-- Modal Close on ESC / Overlay Click
-- Responsive Layout
+- User Profile: View and edit your name, description, and avatar.
+- Photo Cards: View a gallery of photo cards, add new cards, like/unlike cards, and delete your own cards.
+- Responsive Design: Works well on both desktop and mobile devices.
+- Form Validation: All forms are validated on the client side.
+- API Integration: All data is fetched from and saved to a remote server.
 
 ## Tech stack
 
-- HTML
-- CSS
-- BEM methodology and file structure
-- JavaScript
+- HTML5, CSS3 (Flexbox, Grid, BEM methodology)
+- JavaScript (ES6+)
+- Webpack (for bundling)
+- REST API
 - Responsive Design through media quieries
 - Figma Design Interpretation
 - Repository tracking through GitHub
