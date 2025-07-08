@@ -28,7 +28,9 @@ api
     profileAvatarEl.src = userInfo.avatar;
     profileAvatarEl.alt = userInfo.name;
   })
-  .catch(console.error);
+  .catch((error) => {
+    console.error("Failed to load initiall contents: ", error);
+  });
 
 //Edit profile modal elements
 const editProfileBtn = document.querySelector(".profile__edit-btn");
@@ -109,7 +111,9 @@ function handleDeleteSubmit(evt) {
       selectedCard.remove();
       closeModal(confirmDeleteModal);
     })
-    .catch(console.error)
+    .catch((error) => {
+      console.error("Failed to delete a card: ", error);
+    })
     .finally(() => {
       setButtonText(submitBtn, false, "Delete", "Deleting...");
     });
@@ -125,14 +129,15 @@ function handleAvatarSubmit(evt) {
     })
     .then((data) => {
       profileAvatarEl.src = data.avatar;
-      closeModal(editProfileModal);
-    })
-    .catch(console.error)
-    .finally(() => {
-      setButtonText(submitBtn, false);
       closeModal(editAvatarModal);
       editAvatarForm.reset();
       disableButton(editAvatarSubmitBtn, settings);
+    })
+    .catch((error) => {
+      console.error("Failed to edit an avatar: ", error);
+    })
+    .finally(() => {
+      setButtonText(submitBtn, false);
     });
 }
 
@@ -148,12 +153,14 @@ function handleProfileFormSubmit(evt) {
     .then((data) => {
       profileNameEl.textContent = data.name;
       profileDescriptionEl.textContent = data.about;
+      disableButton(editProfileSubmitBtn, settings);
       closeModal(editProfileModal);
     })
-    .catch(console.error)
+    .catch((error) => {
+      console.error("Failed to edit user info: ", error);
+    })
     .finally(() => {
       setButtonText(submitBtn, false);
-      disableButton(editProfileSubmitBtn, settings);
     });
 }
 
@@ -169,13 +176,15 @@ function handleAddCardSubmit(evt) {
     .then((data) => {
       const cardElement = getCardElement(data);
       cardsList.prepend(cardElement);
-    })
-    .catch(console.err)
-    .finally(() => {
-      setButtonText(submitBtn, false);
       disableButton(newPostSubmitBtn, settings);
       closeModal(newPostModal);
       newPostForm.reset();
+    })
+    .catch((error) => {
+      console.error("Failed to create a new card: ", error);
+    })
+    .finally(() => {
+      setButtonText(submitBtn, false);
     });
 }
 
@@ -186,7 +195,9 @@ function handleLike(evt, id) {
     .then((data) => {
       evt.target.classList.toggle("card__like-btn_liked");
     })
-    .catch(console.err);
+    .catch((error) => {
+      console.error("Failed to handle a like: ", error);
+    });
 }
 
 function getCardElement(data) {
